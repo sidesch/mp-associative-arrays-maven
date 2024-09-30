@@ -1,7 +1,12 @@
 Associative Arrays
 ==================
 
-Starter code for a CSC-207 project on associative arrays.
+Sarah Deschamps
 
-_Students must replace the contents of this file with appropriate
-contents, including class, author, date, and URL._
+A project for CSC-207 2024Fa.
+
+This project contains code for the Associative Arrays data structure I developed.
+
+Date due: October 3rd, 2024.
+
+The code for this project can be found here: https://github.com/sidesch/mp-associative-arrays-maven
