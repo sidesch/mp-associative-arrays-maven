@@ -96,13 +96,18 @@ public class AAExperiments {
   public static void main(String[] args) throws Exception {
     PrintWriter pen = new PrintWriter(System.out, true);
 
-    AssociativeArray strings2strings = new AssociativeArray<String, String>();
+    AssociativeArray<String, String> strings2strings = new AssociativeArray<String, String>();
 
+    pen.println(strings2strings.toString());
+    
     // The empty array should not have any key. We'll try one.
     hasKey(pen, strings2strings, "k");
 
     // However, after setting that key, we should be able to get it.
     set(pen, strings2strings, "k", "key");
+    
+    pen.println(strings2strings.toString());
+
     hasKey(pen, strings2strings, "k");
     get(pen, strings2strings, "k");
 
