@@ -176,7 +176,7 @@ public class AssociativeArray<K, V> {
    */
   public void remove(K key) {
     for (int i = 0; i < this.size; i++) {
-      if (this.pairs[i].key == key) {
+      if (this.pairs[i].key.equals(key)) {
         for (int j = i; j < this.size - 1; j++) {
           this.pairs[j] = this.pairs[j + 1].clone();
         } // for
@@ -222,7 +222,7 @@ public class AssociativeArray<K, V> {
    */
   int find(K key) throws KeyNotFoundException {
     for (int i = 0; i < this.size(); i++) {
-      if (this.pairs[i].key == key) {
+      if (this.pairs[i].key.equals(key)) {
         return i;
       } // if
     } // for
