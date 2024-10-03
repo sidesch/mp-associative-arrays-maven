@@ -8,7 +8,7 @@ import java.io.PrintWriter;
  * Experiments with Associative Arrays.
  *
  * @author Samuel A. Rebelsky
- * @author Your Name Here
+ * @author Sarah Deschamps
  */
 public class AAExperiments {
 
@@ -99,13 +99,13 @@ public class AAExperiments {
     AssociativeArray<String, String> strings2strings = new AssociativeArray<String, String>();
 
     pen.println(strings2strings.toString());
-    
+
     // The empty array should not have any key. We'll try one.
     hasKey(pen, strings2strings, "k");
 
     // However, after setting that key, we should be able to get it.
     set(pen, strings2strings, "k", "key");
-    
+
     pen.println(strings2strings.toString());
 
     hasKey(pen, strings2strings, "k");

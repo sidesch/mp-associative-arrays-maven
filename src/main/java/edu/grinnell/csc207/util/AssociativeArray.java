@@ -68,8 +68,8 @@ public class AssociativeArray<K, V> {
         clone.set(this.pairs[i].key, this.pairs[i].val);
       } catch (NullKeyException e) {
         break;
-      }
-    }
+      } // try-catch
+    } // for
     //KVPair<K, V>[] clonePairs = java.util.Arrays.copyOf(this.pairs, this.pairs.length);
     clone.size = this.size;
     return clone;
@@ -84,7 +84,7 @@ public class AssociativeArray<K, V> {
     StringBuilder sb = new StringBuilder();
     if (this.size == 0) {
       return "{}";
-    }
+    } // if
     sb.append("{");
     for (int i = 0; i < this.size - 1; i++) {
       sb.append(this.pairs[i].key + ":" + this.pairs[i].val + ", ");
@@ -141,7 +141,7 @@ public class AssociativeArray<K, V> {
    */
   public V get(K key) throws KeyNotFoundException {
     try {
-      int keyIndex = this.find(key); 
+      int keyIndex = this.find(key);
       return this.pairs[keyIndex].val;
     } catch (KeyNotFoundException e) {
       throw new KeyNotFoundException();
